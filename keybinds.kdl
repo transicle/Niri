@@ -43,7 +43,7 @@ binds {
 	}
 
 	Mod+D {
-		spawn "bash" "-c" "discord"
+		spawn "bash" "-c" "vesktop"
 	}
 
 	// NAVIGATION
