@@ -1,0 +1,68 @@
+// Mod   = Configurable bind Niri uses, refers to Super
+// Super = Real Super key
+
+/*
+
+	KEYBINDS:
+
+	SUPER C           = CLOSE WINDOW
+	SUPER SHIFT F     = TOGGLE FLOATING WINDOW
+
+	SUPER SHIFT S     = SCREENSHOT
+
+	SUPER Q           = OPEN TERMINAL
+
+	SUPER <-          = FOCUS LEFT
+	SUPER ->          = FOCUS RIGHT
+	SUPER SCROLL UP   = FOCUS LEFT
+	SUPER SCROLL DOWN = FOCUS RIGHT
+
+*/
+
+binds {
+	// GENERAL
+	Mod+C {
+		close-window;
+	}
+
+	Mod+Shift+F {
+		toggle-window-floating;
+	}
+
+	Mod+Shift+S {
+		spawn "bash" "-c" "python3 ~/.config/niri/scripts/capture.py";
+	}
+
+	// APPLICATIONS
+	Mod+Q {
+		spawn "bash" "-c" "python3 ~/.config/niri/scripts/terminal.py";
+	}
+
+	Mod+B {
+		spawn "bash" "-c" "flatpak run app.zen_browser.zen"
+	}
+
+	Mod+D {
+		spawn "bash" "-c" "discord"
+	}
+
+	// NAVIGATION
+	/// Arrow Keys
+	Mod+Left {
+		focus-column-left;
+	}
+
+	Mod+Right {
+		focus-column-right;
+	}
+
+	/// Scroll Wheel
+	Mod+WheelScrollUp {
+		focus-column-left;
+	}
+
+	Mod+WheelScrollDown {
+		focus-column-right;
+	}
+}
+

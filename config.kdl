@@ -1,0 +1,4 @@
+include "keybinds.kdl"
+include "gestures.kdl"
+
+spawn-at-startup "qs" "-c" "noctalia-shell"
