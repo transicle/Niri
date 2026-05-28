@@ -7,6 +7,7 @@
 
 	SUPER C           = CLOSE WINDOW
 	SUPER SHIFT F     = TOGGLE FLOATING WINDOW
+	SUPER F           = APP SEARCHER
 
 	SUPER SHIFT S     = SCREENSHOT
 
@@ -31,6 +32,10 @@ binds {
 
 	Mod+Shift+S {
 		spawn "bash" "-c" "python3 ~/.config/niri/scripts/capture.py";
+	}
+
+	Mod+F {
+		spawn "bash" "-c" "fuzzel";
 	}
 
 	// APPLICATIONS
