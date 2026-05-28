@@ -6,4 +6,8 @@ layout {
 	border {
 		off
 	}
+
+	default-column-width {
+		proportion 1.0;
+	}
 }
