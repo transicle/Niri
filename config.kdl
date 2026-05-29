@@ -2,4 +2,4 @@ include "kdl/keybinds.kdl"
 include "kdl/gestures.kdl"
 include "kdl/layout.kdl"
 
-spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "qs" "-p" "/etc/xdg/quickshell/noctalia-shell/shell.qml"
