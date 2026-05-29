@@ -67,11 +67,11 @@ binds {
 	}
 
 	Mod+Shift+Left {
-		move-workspace-to-monitor-left;
+		focus-monitor-left;
 	}
 
 	Mod+Shift+Right {
-		move-workspace-to-monitor-right;
+		focus-monitor-right;
 	}
 	
 	Mod+Up {
