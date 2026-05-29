@@ -1,5 +1,5 @@
 gestures {
-	hot-corners {
-		off
-	}
+	// hot-corners {
+	// 	off
+	// }
 }
