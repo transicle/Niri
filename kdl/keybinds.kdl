@@ -13,10 +13,15 @@
 
 	SUPER Q           = OPEN TERMINAL
 
-	SUPER <-          = FOCUS LEFT
-	SUPER ->          = FOCUS RIGHT
-	SUPER SCROLL UP   = FOCUS LEFT
-	SUPER SCROLL DOWN = FOCUS RIGHT
+	SUPER <-          = MOVE 1 WINDOW LEFT
+	SUPER ->          = MOVE 1 WINDOW RIGHT
+	SUPER SCROLL UP   = MOVE 1 WINDOW LEFT
+	SUPER SCROLL DOWN = MOVE 1 WINDOW RIGHT
+	SUPER SHIFT <-    = MOVE 1 WORKSPACE LEFT
+	SUPER SHIFT ->    = MOVE 1 WORKSPACE RIGHT
+	SUPER ^			  = MOVE UP 1 WORKSPACE
+	SUPER v           = MOVE DOWN 1 WORKSPACE
+	SUPER <NUMBER>	  = MOVE TO WORKSPACE N
 
 */
 
@@ -61,6 +66,22 @@ binds {
 		focus-column-right;
 	}
 
+	Mod+Shift+Left {
+		focus-workspace-left;
+	}
+
+	Mod+Shift+Right {
+		focus-workspace-right;
+	}
+	
+	Mod+Up {
+		focus-workspace-up;
+	}
+
+	Mod+Down {
+		focus-workspace-down;
+	}
+
 	/// Scroll Wheel
 	Mod+WheelScrollUp {
 		focus-column-left;
@@ -69,6 +90,16 @@ binds {
 	Mod+WheelScrollDown {
 		focus-column-right;
 	}
-}
 
-// MOD + Up/Down
+	/// Number Keys
+	Mod+1 { focus-workspace 1; }
+	Mod+2 { focus-workspace 2; }
+	Mod+3 { focus-workspace 3; }
+	Mod+4 { focus-workspace 4; }
+	Mod+5 { focus-workspace 5; }
+	Mod+6 { focus-workspace 6; }
+	Mod+7 { focus-workspace 7; }
+	Mod+8 { focus-workspace 8; }
+	Mod+9 { focus-workspace 9; }
+	Mod+0 { focus-workspace 0; }
+}
