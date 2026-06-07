@@ -8,6 +8,7 @@
 	SUPER C           = CLOSE WINDOW
 	SUPER SHIFT F     = TOGGLE FLOATING WINDOW
 	SUPER R           = APP SEARCHER
+	SUPER I           = IDE (CODE EDITOR)
 
 	SUPER SHIFT S     = SCREENSHOT
 
@@ -45,6 +46,10 @@ binds {
 
 	Mod+R {
 		spawn "bash" "-c" "fuzzel";
+	}
+
+	Mod+I {
+		spawn "bash" "-c" "python3 ~/.config/niri/scripts/ide.py";
 	}
 
 	// APPLICATIONS

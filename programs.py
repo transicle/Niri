@@ -3,3 +3,4 @@
 TERMINAL_EMULATOR = "ghostty"
 SCREENSHOT_TOOL   = "slurp"
 DISCORD           = "discord"
+IDE               = "code"
