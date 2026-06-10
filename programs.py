@@ -2,5 +2,7 @@
 
 TERMINAL_EMULATOR = "ghostty"
 SCREENSHOT_TOOL   = "slurp"
-DISCORD           = "discord"
+DISCORD           = "equibop"
 IDE               = "code"
+BROWSER           = "flatpak run app.zen_browser.zen"
+

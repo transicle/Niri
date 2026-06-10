@@ -6,10 +6,10 @@
 	KEYBINDS:
 
 	SUPER C           = CLOSE WINDOW
-	SUPER SHIFT F     = TOGGLE FLOATING WINDOW
 	SUPER R           = APP SEARCHER
 	SUPER I           = IDE (CODE EDITOR)
 
+	SUPER SHIFT R     = RELOAD CONFIG / RICE
 	SUPER SHIFT S     = SCREENSHOT
 
 	SUPER Q           = OPEN TERMINAL
@@ -23,7 +23,7 @@
 	SUPER SHIFT <-    = MOVE 1 WORKSPACE LEFT
 	SUPER SHIFT ->    = MOVE 1 WORKSPACE RIGHT
 
-	SUPER ^			  = MOVE UP 1 WORKSPACE
+	SUPER ^	  	  = MOVE UP 1 WORKSPACE
 	SUPER v           = MOVE DOWN 1 WORKSPACE
 
 	SUPER <NUMBER>	  = MOVE TO WORKSPACE N
@@ -36,8 +36,8 @@ binds {
 		close-window;
 	}
 
-	Mod+Shift+F {
-		toggle-window-floating;
+	Mod+Shift+R {
+		spawn "bash" "-c" "python ~/.config/niri/scripts/reload-rice.py"
 	}
 
 	Mod+Shift+S {
@@ -58,11 +58,11 @@ binds {
 	}
 
 	Mod+B {
-		spawn "bash" "-c" "flatpak run app.zen_browser.zen"
+		spawn "bash" "-c" "python3 ~/.config/niri/scripts/browser.py"
 	}
 
 	Mod+D {
-		spawn "bash" "-c" "vesktop"
+		spawn "bash" "-c" "python3 ~/.config/niri/scripts/discord.py"
 	}
 
 	// NAVIGATION

@@ -7,6 +7,6 @@ from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 
-from programs import IDE as program
+from programs import DISCORD as program
 
 subprocess.run(program, shell=True)
